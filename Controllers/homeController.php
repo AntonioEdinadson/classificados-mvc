@@ -4,9 +4,12 @@ class homeController extends ControllerView{
 
     public function index() {
        
+        $anuncios = new Anuncios();
+        $usuarios = new Usuarios();
+        
         $dados = array(
-            'quantidade' => 5,
-            'nome'       => 'Antonio'
+            'quantidade' => $anuncios->getQuantidade(),
+            'nome'       => $usuarios->getNome()
         );
 
         $this->loadTemplate('home', $dados);

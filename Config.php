@@ -6,7 +6,7 @@ $config = array();
 
 if (ENVIRONMENT == 'development') {
 
-    define("BASE-URL", "http://localhost/B7web_MVC/classificados/");
+    define("BASE_URL", "http://localhost/B7web_MVC/classificados/");
 
     $config['dbname'] = 'classificados';
     $config['dbhost']   = 'localhost';
